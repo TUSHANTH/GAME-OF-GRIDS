@@ -1,0 +1,204 @@
+ body{
+  background-image:url('backgif.gif');
+  background-size:cover;
+  margin:0%;
+}
+#easy{
+  display:block;
+}
+#normal{
+  display: none;
+}
+.page{
+    width: 20%;
+    margin-left: 75%;
+    height: 200px;
+    font-size: 25px;
+    padding-top: 5%;
+    position:absolute;
+    display:block;
+}
+.Question{
+    width:100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.Question1{
+    width:100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: transparent;
+    padding: 4px;
+    width: 22.5%;
+    height: 25%;
+    margin-left: 35%;
+  }
+  .grid-container1 {
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: transparent;
+    padding: 4px;
+    width: 22.5%;
+    height: 25%;
+    margin-left: 35%;
+  }
+  .grid-item {
+    background-color: transparent;
+    border: 0.2px solid rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  #background_1{
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+    display:none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .message{
+    background-image: url(bg-4.jpg);
+    background-size: cover;
+    position: absolute;
+    margin-left: 31.5%;
+    margin-top: 19%;
+    padding: 15px;
+    font-size: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 30%;
+    height: 25%;
+  }
+  .won{
+    font:bold;
+    color: cornsilk;
+    background-color:transparent;
+    font-size:30px;
+  }
+  .score{
+    font:italic;
+    color: wheat;
+    background-color:transparent;
+    font-size:30px;
+    color: rgb(255, 255, 255);
+  }
+  .name{
+    font:bold;
+    color: white;
+    background-color:transparent;
+    font-size: 20px;
+  }
+  input[type="text"]{
+    background-color: rgb(255, 255, 255);
+    width:40%;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  .grid-container_1 {
+    display:grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: transparent;
+    padding: 10px;
+    width: 30%;
+    height: 50%;
+    border-radius: 5px;
+    margin-left: 31%;
+  }
+  .grid-container_2 {
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: transparent;
+    padding: 10px;
+    width: 30%;
+    height: 50%;
+    border-radius: 5px;
+    margin-left: 31%;
+  }
+  .title1{
+    font-family: 'Courgette', cursive;
+    color: #e5ff00;
+    font-size: 30px;
+    padding:30px;
+    float:left;
+  }
+  .title2{
+    font-family: 'Merienda', cursive;
+    color: #00ff0d;
+    font-size: 30px;
+    padding:20px;
+    margin-left: 0%;    
+  }
+  .title3{
+    font-family: 'Merienda', cursive;
+    color: #FFA500;
+    width: 100%;
+    margin-left: 0;
+  }
+  .button {
+    font-family: 'Merienda', cursive;
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 1%;
+    border-radius: 15px;
+  }
+  .button1 {
+    font-family: 'Merienda', cursive;
+    background-image:url('bg-2.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: blanchedalmond;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 22%;
+    margin-top: 1%;
+    border-radius: 15px;
+  }
+  #background_2{
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 7;
+    display:none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .message1{
+    background-image: url(bg-3.jpg) ;
+    background-size: cover;
+    position: absolute;
+    margin-left: 40.5%;
+    margin-top: 20%;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 15%;
+    height: 20%;
+  }
+  .lose{
+    font:italic;
+    background-color:transparent;
+    font-size:30px;
+    color:rgb(255, 255, 255);
+  }
+  .button2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-image: url('bg1.jpg');
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+  }

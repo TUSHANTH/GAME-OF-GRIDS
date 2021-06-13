@@ -1,0 +1,151 @@
+<html>
+    <head>
+        <title>Game Of Grids</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Merienda&display=swap" rel="stylesheet">
+        <script src="home.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <label class="title1">GAME OF GRIDS</label>
+        <audio id="s1">
+            <source src="success.mp3" type="audio/mp3">
+        </audio>
+        <audio id="s2">    
+            <source src="moving.mp3" type="audio/mp3">
+        </audio>
+        <audio id="s4">
+            <source src="failed.mp3" type="audio/mp3">
+        </audio>
+        <div id="background_1">
+            <div class="message">
+                <label class="won">YOU WON</label><br>
+                <label class="score">score:<span id="score1" style="background-color: transparent;"></span></label><br>
+                <label class="name">Enter your name</label><br>
+                <input type="text"id="txt" name="txt"><br>
+                <button class="button2" onclick="part1(document.getElementById('txt').value)">Save & play again</button>
+            </div>
+        </div>
+        <div id="background_2">
+            <div class="message1"><br>
+                <label class="lose">YOU LOST</label><br>
+                <button class="button2" onclick=restart()>Restart</button>
+            </div>
+        </div>
+        <section class="page">
+            <label class="title2">MOVES:<span id="moves"></span></label><br><br><br>
+            <label class="title3">TIMELEFT:<span id="time">03:00</span></label><br><br><br>
+            <label class="title3">HighestScore:</label><br><br>
+            <label class="title3" id="highscore1"></label>
+        </section>
+        <section id="easy">
+            <section class="Question">
+                <div class="grid-container">
+                    <div class="grid-item"id="x1"></div>
+                    <div class="grid-item"id="x2"></div>
+                    <div class="grid-item"id="x3"></div>
+                    <div class="grid-item"id="x4"></div>
+                    <div class="grid-item"id="x5"></div>
+                    <div class="grid-item"id="x6"></div>
+                    <div class="grid-item"id="x7"></div>
+                    <div class="grid-item"id="x8"></div>
+                    <div class="grid-item"id="x9"></div>
+                </div>              
+            </section>
+            <section class="Answer">
+                <div class="grid-container_1">
+                    <div class="grid-item"id=1 onclick="MOVEMENT(1)"></div>
+                    <div class="grid-item"id=2 onclick="MOVEMENT(2)"></div>
+                    <div class="grid-item"id=3 onclick="MOVEMENT(3)"></div>
+                    <div class="grid-item"id=4 onclick="MOVEMENT(4)"></div>
+                    <div class="grid-item"id=5 onclick="MOVEMENT(5)"></div>
+                    <div class="grid-item"id=6 onclick="MOVEMENT(6)"></div>
+                    <div class="grid-item"id=7 onclick="MOVEMENT(7)"></div>
+                    <div class="grid-item"id=8 onclick="MOVEMENT(8)"></div>
+                    <div class="grid-item"id=9 onclick="MOVEMENT(9)"></div>
+                    <div class="grid-item"id=10 onclick="MOVEMENT(10)"></div>
+                    <div class="grid-item"id=11 onclick="MOVEMENT(11)"></div>
+                    <div class="grid-item"id=12 onclick="MOVEMENT(12)"></div>
+                    <div class="grid-item"id=13 onclick="MOVEMENT(13)"></div>
+                    <div class="grid-item"id=14 onclick="MOVEMENT(14)"></div>
+                    <div class="grid-item"id=15 onclick="MOVEMENT(15)"></div>
+                    <div class="grid-item"id=16 onclick="MOVEMENT(16)"></div>
+                    <div class="grid-item"id=17 onclick="MOVEMENT(17)"></div>
+                    <div class="grid-item"id=18 onclick="MOVEMENT(18)"></div>
+                    <div class="grid-item"id=19 onclick="MOVEMENT(19)"></div>
+                    <div class="grid-item"id=20 onclick="MOVEMENT(20)"></div>
+                    <div class="grid-item"id=21 onclick="MOVEMENT(21)"></div>
+                    <div class="grid-item"id=22 onclick="MOVEMENT(22)"></div>
+                    <div class="grid-item"id=23 onclick="MOVEMENT(23)"></div>
+                    <div class="grid-item"id=24 onclick="MOVEMENT(24)"></div>
+                    <div class="grid-item"id=25 onclick="MOVEMENT(25)"></div>
+                </div>
+            </section>
+        </section>
+        <section id="normal">
+            <section class="Question1">
+                <div class="grid-container1">
+                    <div class="grid-item"id="y1"></div>
+                    <div class="grid-item"id="y2"></div>
+                    <div class="grid-item"id="y3"></div>
+                    <div class="grid-item"id="y4"></div>
+                    <div class="grid-item"id="y5"></div>
+                    <div class="grid-item"id="y6"></div>
+                    <div class="grid-item"id="y7"></div>
+                    <div class="grid-item"id="y8"></div>
+                    <div class="grid-item"id="y9"></div>
+                    <div class="grid-item"id="y10"></div>
+                    <div class="grid-item"id="y11"></div>
+                    <div class="grid-item"id="y12"></div>
+                    <div class="grid-item"id="y13"></div>
+                    <div class="grid-item"id="y14"></div>
+                    <div class="grid-item"id="y15"></div>
+                    <div class="grid-item"id="y16"></div>
+                </div>              
+            </section>
+            <section class="Answer1">
+                <div class="grid-container_2">
+                    <div class="grid-item"id="a1" onclick="move(1)"></div>
+                    <div class="grid-item"id="a2" onclick="move(2)"></div>
+                    <div class="grid-item"id="a3" onclick="move(3)"></div>
+                    <div class="grid-item"id="a4" onclick="move(4)"></div>
+                    <div class="grid-item"id="a5" onclick="move(5)"></div>
+                    <div class="grid-item"id="a6" onclick="move(6)"></div>
+                    <div class="grid-item"id="a7" onclick="move(7)"></div>
+                    <div class="grid-item"id="a8" onclick="move(8)"></div>
+                    <div class="grid-item"id="a9" onclick="move(9)"></div>
+                    <div class="grid-item"id="a10" onclick="move(10)"></div>
+                    <div class="grid-item"id="a11" onclick="move(11)"></div>
+                    <div class="grid-item"id="a12" onclick="move(12)"></div>
+                    <div class="grid-item"id="a13" onclick="move(13)"></div>
+                    <div class="grid-item"id="a14" onclick="move(14)"></div>
+                    <div class="grid-item"id="a15" onclick="move(15)"></div>
+                    <div class="grid-item"id="a16" onclick="move(16)"></div>
+                    <div class="grid-item"id="a17" onclick="move(17)"></div>
+                    <div class="grid-item"id="a18" onclick="move(18)"></div>
+                    <div class="grid-item"id="a19" onclick="move(19)"></div>
+                    <div class="grid-item"id="a20" onclick="move(20)"></div>
+                    <div class="grid-item"id="a21" onclick="move(21)"></div>
+                    <div class="grid-item"id="a22" onclick="move(22)"></div>
+                    <div class="grid-item"id="a23" onclick="move(23)"></div>
+                    <div class="grid-item"id="a24" onclick="move(24)"></div>
+                    <div class="grid-item"id="a25" onclick="move(25)"></div>
+                    <div class="grid-item"id="a26" onclick="move(26)"></div>
+                    <div class="grid-item"id="a27" onclick="move(27)"></div>
+                    <div class="grid-item"id="a28" onclick="move(28)"></div>
+                    <div class="grid-item"id="a29" onclick="move(29)"></div>
+                    <div class="grid-item"id="a30" onclick="move(30)"></div>
+                    <div class="grid-item"id="a31" onclick="move(31)"></div>
+                    <div class="grid-item"id="a32" onclick="move(32)"></div>
+                    <div class="grid-item"id="a33" onclick="move(33)"></div>
+                    <div class="grid-item"id="a34" onclick="move(34)"></div>
+                    <div class="grid-item"id="a35" onclick="move(35)"></div>
+                    <div class="grid-item"id="a36" onclick="move(36)"></div>
+                </div>
+            </section>
+        </section>  
+        <button class="button" id="button" onclick="normal()">Normal</button>
+        <button class="button1" id="button1" onclick="easy()">Easy</button>
+    </body>
+</html>
